@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+body h2 {
+  color: #76ff86;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  margin-top: 3rem;
+}
+
+h1 {
+  color: #fffffe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section.fif {
+  background-color: rgb(25, 25, 25);
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgb(215, 215, 215), -2px -2px 5px rgb(215, 215, 215);
+}
+
+section.six {
+  background-color: rgb(25, 25, 25);
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgb(215, 215, 215), -2px -2px 5px rgb(215, 215, 215);
+}
+
+section.seven {
+  background-color: rgb(25, 25, 25);
+  margin: 2rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgb(215, 215, 215), -2px -2px 5px rgb(215, 215, 215);
+}
+
+.card {
+  width: 310px;
+  height: 350px;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 250px;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  border-radius: 20px;
+  border: 1.5px solid #fcfc5a;
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card__face--front {
+  background-image: linear-gradient(rgb(50, 50, 50), rgb(25, 25, 25));
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.card__face--front h1 {
+  color: #f8f8f8;
+  font-size: x-large;
+}
+
+.card__face--back {
+  background-color: black;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+  color: #a7a9be;
+  overflow: scroll;
+}
+
+.card__header {
+  position: relative;
+  padding: 0.5rem;
+}
+.card__header p {
+  line-height: 32px;
+}
+
+.card__header::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.card__body p {
+  line-height: 32px;
+  margin: 1.25rem 0.3rem;
+}/*# sourceMappingURL=style.css.map */
